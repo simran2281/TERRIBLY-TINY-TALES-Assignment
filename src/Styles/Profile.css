@@ -1,0 +1,145 @@
+.profile-container {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.background-picture {
+  width: 100%;
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+}
+
+.profile-picture {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  top: 70%;
+  left: 20px;
+  transform: translateY(-50%);
+}
+
+.profile-picture img {
+  width: 150px; 
+  height: 150px;
+  border-radius: 50%;
+}
+
+.name-info{
+  display: relative;
+  align-items: center;
+  margin-top: 60px;
+  top: 50%;
+  left: 200px;
+  transform: translateY(-50%);
+  position: absolute;
+  
+}
+
+.name-info h2 {
+  margin-left: 10px;
+}
+
+.name-info h2 button{
+  margin-left: 10px;
+  border-radius: 50%;
+  border-style: none;
+
+
+}
+
+.buttons {
+  display:flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.buttons button {
+  background-color: rgb(255, 255, 255);
+  border-radius: 7px;
+  height: 40px;
+  width: 90px;
+  text-align: center;
+  border-left: 2px solid grey; 
+  border-bottom: 2px solid grey;
+  border-right: 2px solid grey; 
+  border-top: 2px solid grey;  
+}
+
+.buttons p{
+ color: grey;
+ font-size: 18px;
+ margin-top: 10px;
+ font-weight:550;
+}
+
+.name-info h3 {
+  margin-top: 18px;
+  color: grey;
+}
+
+.profile-info{
+  margin-left: 30px;
+  display: grid;
+  margin-top: 10px;
+}
+
+.profile-info h4{
+ font-size: 20px;
+ font-style: none;
+ font-weight: 400;
+ margin-bottom: 5px;
+}
+
+.profile-info a{
+  color: rgb(11, 220, 220);
+}
+
+.profile-info .icons{
+  display: flex;
+  margin-top: 20px;
+  column-gap: 10px;
+
+}
+
+.profile-info .icons button{
+  border-radius: 50%;
+  border-style: none;
+}
+
+
+@media only screen and (max-width: 768px) {
+ 
+
+  .profile-container {
+    width: cover
+  }
+
+  .name-info {
+    font-size: 10px;
+    
+  }
+  .name-info .h2 .button .diamond{
+    width:10px;
+    height: 10px;
+  }
+ 
+
+  .name-info .buttons button {
+    width: 60px;
+    height: 40px;
+    margin-bottom: 6px;
+    font-size: 10px;
+  }
+
+  .profile__details .social_details .name .verified {
+    width: 23px;
+  }
+
+  .profile-info h4 {
+    font-size: 15px;
+  }
+}
